@@ -30,4 +30,9 @@ public class HouseController {
         log.info("houseInfo: {}", houseInfo);
         return 200;
     }
+
+    @GetMapping("/houseData")
+    public String houseData() {
+        return "houseData";
+    }
 }

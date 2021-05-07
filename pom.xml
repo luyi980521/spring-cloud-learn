@@ -19,6 +19,7 @@
         <module>08-feign-inherit-provide</module>
         <module>09-feign-inherit-consume</module>
         <module>10-hystrix-demo</module>
+        <module>11-hystrix-feign-demo</module>
     </modules>
 
     <parent>
