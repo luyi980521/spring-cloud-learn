@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: feign-inherit-consume
+server:
+  port: 8088
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}

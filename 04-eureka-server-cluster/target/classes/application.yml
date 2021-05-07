@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: eureka-server-cluster
+  profiles:
+    active: master
+eureka:
+  server:
+    enable-self-preservation: false
+    # 默认60000ms
+    eviction-interval-timer-in-ms: 5000
