@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: hystrix-dashboard-demo
+server:
+  port: 8091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+# turbine配置
+turbine:
+  # 需要聚合的服务名
+  app-config: hytrix-feign-demo
+  # turbine需要聚合的集群名称
+  aggregator:
+    cluster-config: default
+  # 集群名表达式
+  cluster-name-expression: "default"
+#hystrix:
+#  dashboard:
+#    proxy-stream-allow-list: "*"
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"

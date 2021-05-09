@@ -1,0 +1,6 @@
+/Users/luyi/IdeaProjects/spring-cloud-learn/11-hystrix-feign-demo/src/main/java/com/lyman/hystrix/UserRemoteClientFallback.java
+/Users/luyi/IdeaProjects/spring-cloud-learn/11-hystrix-feign-demo/src/main/java/com/lyman/config/BeanConfiguration.java
+/Users/luyi/IdeaProjects/spring-cloud-learn/11-hystrix-feign-demo/src/main/java/com/lyman/feign/UserRemoteClient.java
+/Users/luyi/IdeaProjects/spring-cloud-learn/11-hystrix-feign-demo/src/main/java/com/lyman/controller/DemoController.java
+/Users/luyi/IdeaProjects/spring-cloud-learn/11-hystrix-feign-demo/src/main/java/com/lyman/hystrix/UserRemoteClientFallbackFactory.java
+/Users/luyi/IdeaProjects/spring-cloud-learn/11-hystrix-feign-demo/src/main/java/com/lyman/HystrixFeignApplication.java

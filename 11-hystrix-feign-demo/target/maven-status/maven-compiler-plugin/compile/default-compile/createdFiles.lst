@@ -1,0 +1,6 @@
+com/lyman/config/BeanConfiguration.class
+com/lyman/HystrixFeignApplication.class
+com/lyman/hystrix/UserRemoteClientFallbackFactory.class
+com/lyman/hystrix/UserRemoteClientFallbackFactory$1.class
+com/lyman/controller/DemoController.class
+com/lyman/feign/UserRemoteClient.class

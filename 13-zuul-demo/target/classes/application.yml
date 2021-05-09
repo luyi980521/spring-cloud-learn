@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: zuul-demo
+server:
+  port: 8092
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+
+
+# 配置网关的路由，自定义名称，当访问/cxytiandi/**下的地址时，
+# 都会跳转到http://cxytiandi.com上
+zuul:
+  routes:
+    cxytiandi:
+      path: /cxytiandi/**
+      url: http://cxytiandi.com/
+    fshhouse:
+      path: /api-house/**
+    fshsubsititution:
+      path: /api/**
+      url: forward:/local
+    api:
+      path: /user/**
+      url: forward:/
+  # 配置请求uri的前缀
+  prefix: /rest
+  # 禁用过滤器
+  IpFilter:
+    pre:
+      disable: false

@@ -10,3 +10,13 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+feign:
+  hystrix:
+    enabled: true
+
+# 健康检查
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "hystrix.stream"
