@@ -1,6 +1,6 @@
 package com.lyman.res;
 
-import com.lyman.emun.ResponseStatusEnum;
+import com.lyman.enums.ResponseStatusEnum;
 
 /**
  * Created by luyi on 2021/5/9 18:46.

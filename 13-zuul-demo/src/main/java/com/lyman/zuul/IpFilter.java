@@ -1,7 +1,7 @@
 package com.lyman.zuul;
 
 import com.alibaba.fastjson.JSON;
-import com.lyman.emun.ResponseStatusEnum;
+import com.lyman.enums.ResponseStatusEnum;
 import com.lyman.res.RespResult;
 import com.lyman.utils.IPUtil;
 import com.netflix.zuul.ZuulFilter;

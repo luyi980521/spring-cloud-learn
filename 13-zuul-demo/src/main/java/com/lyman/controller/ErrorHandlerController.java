@@ -1,6 +1,6 @@
 package com.lyman.controller;
 
-import com.lyman.emun.ResponseStatusEnum;
+import com.lyman.enums.ResponseStatusEnum;
 import com.lyman.res.RespResult;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.lyman.emun;
+package com.lyman.enums;
 
 /**
  * Created by luyi on 2021/5/9 18:48.

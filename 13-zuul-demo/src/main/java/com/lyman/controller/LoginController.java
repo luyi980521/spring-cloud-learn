@@ -1,6 +1,5 @@
 package com.lyman.controller;
 
-import com.lyman.emun.ResponseStatusEnum;
 import com.lyman.pojo.User;
 import com.lyman.res.RespResult;
 import org.springframework.web.bind.annotation.GetMapping;
