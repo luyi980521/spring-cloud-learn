@@ -13,8 +13,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 // 开启路由代理功能
 @EnableZuulProxy
 @EnableDiscoveryClient
-public class ZuulApplication {
+public class ZuulFileApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ZuulApplication.class, args);
+        SpringApplication.run(ZuulFileApplication.class, args);
     }
 }

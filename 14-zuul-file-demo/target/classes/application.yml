@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hystrix-feign-demo
+    name: zuul-file-demo
 server:
   port: 8093
 eureka:
@@ -10,13 +10,13 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
-feign:
-  hystrix:
-    enabled: true
-
-# 健康检查
+zuul:
+  routes:
+    zuul-file-demo:
+      path: /zuul-file-demo/**
+      url: forward:/
 management:
   endpoints:
     web:
       exposure:
-        include: "hystrix.stream"
+        include: "*"

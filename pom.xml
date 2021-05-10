@@ -22,6 +22,7 @@
         <module>11-hystrix-feign-demo</module>
         <module>12-hystrix-dashboard-demo</module>
         <module>13-zuul-demo</module>
+        <module>14-zuul-file-demo</module>
     </modules>
 
     <parent>
@@ -31,6 +32,11 @@
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

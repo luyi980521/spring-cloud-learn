@@ -30,7 +30,7 @@ public class SecondFilter extends ZuulFilter {
     @Override
     public Object run() throws ZuulException {
         RequestContext ctx = RequestContext.getCurrentContext();
-        int res = 10 / 0;
+//        int res = 10 / 0;
         log.info("ipFilter传递过来的默认数据: {}", ctx.get("default"));
         log.info("ipFilter传递过来的数据 msg: {}", ctx.get("msg"));
         return null;

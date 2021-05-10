@@ -33,3 +33,5 @@ zuul:
   IpFilter:
     pre:
       disable: false
+  # 开启zuul的重试机制
+  retryable: true

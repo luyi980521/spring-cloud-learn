@@ -2,7 +2,7 @@ spring:
   application:
     name: hystrix-feign-demo
 server:
-  port: 8090
+  port: 8093
 eureka:
   client:
     service-url:
